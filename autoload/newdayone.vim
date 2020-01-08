@@ -28,7 +28,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 function! newdayone#new(count, line1, line2, ...)
-  let s:new_dayone_cmd = 'dayone new'
+  let s:new_dayone_cmd = 'dayone2 new'
 
   let content      = join(getline(a:line1, a:line2), "\n")
   let content      = substitute(content, '"', '\\"', "g")
